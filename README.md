@@ -7,7 +7,7 @@ A collection of the personal agent skills I keep in `~/.agents/skills`. Read the
 | Skill | What it helps with | Example prompt |
 |---|---|---|
 | [issue-pr-ci-delivery](skills/issue-pr-ci-delivery/SKILL.md) | Commit, push, or follow a GitHub PR to the requested point. | “Commit just the staged changes. Keep the commit local.” |
-| [open-source-product-playbook](skills/open-source-product-playbook/SKILL.md) | Research an open-source product idea, choose a stack and design direction, and prepare it for release. | “Help me evaluate this open-source app idea and figure out what the first release needs.” |
+| [product](skills/product/SKILL.md) | Research an open-source product idea, choose a stack and design direction, and prepare it for release. | “Help me evaluate this open-source app idea and figure out what the first release needs.” |
 | [repo-maintenance](skills/repo-maintenance/SKILL.md) | Find work worth contributing, check PR readiness, or handle review and CI. | “Check whether my PR is ready to send and tell me what still blocks it.” |
 | [upstream-sync](skills/upstream-sync/SKILL.md) | Sync the intended branch of a Git repository or fork with upstream. | “Sync the fork’s default branch with upstream. Keep my feature work where it is.” |
 
