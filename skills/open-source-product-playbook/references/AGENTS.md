@@ -18,7 +18,7 @@
 | folia-major | AGENTS.md + CLAUDE.md 指针 | 薄路由 + 14 个 SKILL.md + 机器边界检查 |
 | dsh-Go | AGENTS.md 真身 + CLAUDE.md symlink | 硬规则 + 5 技能 + 真机验证 |
 | BiliDesk | 无（只有 README） | — |
-| Kazumi | 无 agent 文档 | AI 政策放在 PR 模板 + CONTRIBUTING |
+| Kazumi | 核对的快照中无根目录 agent 文档 | AI 贡献要求由 PR 模板和 `static/doc/CONTRIBUTING.md` 承担 |
 
 **结论**：agent 文档不是装饰，是把硬约定机器化执行、降低 agent 错误率的工具。没有它的项目（BiliDesk/Kazumi）靠人类审查兜底；有它的项目把规矩写进 gate。
 
@@ -106,7 +106,7 @@
 
 ## 5. 何时写 / 何时更新（活文档）
 
-- **项目初始化**：脚手架时写骨架（概览 + 命令 + 基本边界）。
+- **项目初始化**：用户明确要求，或仓库已有 agent 规范约定时，在工具能发现的位置写骨架（概览、命令、基本边界）。普通 App 的公开入口见[开源 App 仓库指南](APP-REPOSITORY.md)。
 - **加模块 / 功能**：补架构边界 + 变更食谱。
 - **约定变更**：同步更新，删过时规则。
 - **agent 反复犯错**：把纠正固化为规则 + gate（这是 AGENTS.md 增长的主要来源）。
@@ -189,7 +189,7 @@ Issue open → PR open（Fixes #N，base=main）→ CI
 
 反模式：PR 打开即关 Issue；base 不是 main 且无明确覆盖；CI 红/缺失就宣称完成；CI 成功后自动关 Issue；对缺 `Fixes` 的 bot PR 一律硬失败（已有豁免的写明豁免）；常规功能直推 main。
 
-配套（bootstrap 时一并落地并互相链接）：CONTRIBUTING 写同一闭环给人读；`.github/pull_request_template.md`（Summary / Fixes #N / Test plan）；CI workflow 注释「CI 是合并门禁、不关 Issue」。
+配套按仓库需要落地。README 的贡献段给读者入口，较长的规则沿用现有贡献指南。在 `.github/pull_request_template.md` 提醒实际提交要求并链接规则。CI 和发布工作流按仓库实际设置维护。
 
 ## 安全 / 隐私
 - 不 log 凭据；secrets 不进仓；{隔离设置}
@@ -218,4 +218,4 @@ Issue open → PR open（Fixes #N，base=main）→ CI
 
 ---
 
-> 时效与来源：截至 2026-11-16，实证抓取自 web-to-app / read-aware / folia-major / dsh-Go / BiliDesk / Kazumi 的 AGENTS.md / CLAUDE.md / CONTRIBUTING / PR 模板，及 GoogleChrome/modern-web-guidance-src 的 AGENTS.md。
+> 时效与来源：截至 2026-11-16，实证抓取自 web-to-app / read-aware / folia-major / dsh-Go / BiliDesk / Kazumi 的 AGENTS.md / CLAUDE.md / CONTRIBUTING / PR 模板，及 GoogleChrome/modern-web-guidance-src 的 AGENTS.md。Kazumi 的文件位置另按[仓库指南中的快照](APP-REPOSITORY.md)复核。

@@ -4,6 +4,7 @@
 > 配套：[TECH-STACK.md](./TECH-STACK.md)（三栈选型）· [DEV-TIPS.md](./DEV-TIPS.md)（怎么协作）· [AGENTS.md](./AGENTS.md)（如何写项目 AGENTS.md）。设计系统可选（见 [UI-DESIGN.md](./UI-DESIGN.md)，非必选）。本文回答：**做成什么样才算一个完整的开源产品**。
 >
 > **AI 必读**：本文是运行时层，条目可直接执行、可判定。按 P0 / P1 / P2 分级落地：**P0 缺失 = 产品不完整**。文中所有联系方式、社区入口均为可配置槽位，不是硬编码需求。
+> GitHub 仓库的 README、静态资源和维护入口见[开源 App 仓库指南](APP-REPOSITORY.md)。
 
 ---
 
@@ -112,7 +113,7 @@
 
 - **社区入口**：TG 群 / QQ 群 / Discord / Matrix / GitHub Discussions，按项目实际配置。QQ/微信群用二维码：**本地生成**（不经过第三方 QR API），标注有效期，过期可刷新。
 - **意见反馈**：GitHub Issue 跳转（模板预填版本/平台/复现步骤）；应用内反馈可选，附日志导出——**用户审阅后才发送**。先链「已有 issues」减少重复。
-- **参与贡献**：GitHub PR / CONTRIBUTING / good first issues 跳转；说清「不会代码也能贡献」（文档 / 翻译 / 设计 / 报 bug）。
+- **参与贡献**：优先链接仓库 README 的贡献段或既有贡献指南。已有适合新人的任务时可附入口，也写清文档、翻译、设计和问题反馈怎样参与。
 - **感谢贡献者**：contributors 列表跳转 + 应用内头像墙（GitHub contributors API）；采用 all-contributors 口径，**非代码贡献同样上榜**。
 - **赞助**：GitHub Sponsors / Open Collective / 爱发电，入口常驻但**绝不弹窗纠缠**。
 
@@ -132,7 +133,7 @@
 
 - **隐私声明**：收集什么（最好为零）、存哪里、发往哪；**网络请求清单**可查。遥测默认关，opt-in 且可审。
 - **权限说明**：每个权限一句话理由，设置里可查。
-- **可验证**：发布附校验和 / 签名；可复现构建（reproducible builds）为 P1 目标；SECURITY.md 安全上报通道。
+- **可验证**：发布附与渠道相符的校验和或签名；可复现构建（reproducible builds）为 P1 目标。安全上报用项目已有私下通道，需要 GitHub 识别独立政策时可放 `.github/SECURITY.md`。
 - **克制**：无广告、无暗黑模式、无 star-ware（「给星解锁」）、无评分纠缠、无强制订阅。
 
 ---
