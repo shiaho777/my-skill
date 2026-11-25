@@ -1,0 +1,36 @@
+# My Skill
+
+[简体中文](README.zh-CN.md)
+
+A collection of the personal agent skills I keep in `~/.agents/skills`. Read the files to see how I break down common development tasks, or install the skills you find useful.
+
+| Skill | What it helps with | Example prompt |
+|---|---|---|
+| [issue-pr-ci-delivery](skills/issue-pr-ci-delivery/SKILL.md) | Commit, push, or follow a GitHub PR to the requested point. | “Commit just the staged changes. Keep the commit local.” |
+| [md-docs-beautify](skills/md-docs-beautify/SKILL.md) | Improve Markdown docs and draw diagrams grounded in the repository. | “Add an architecture diagram after Quick Start. Update the Chinese README too.” |
+| [repo-maintenance](skills/repo-maintenance/SKILL.md) | Find work worth contributing, check PR readiness, or handle review and CI. | “Check whether my PR is ready to send and tell me what still blocks it.” |
+| [ui-ux-engineering](skills/ui-ux-engineering/SKILL.md) | Improve actual Jetpack Compose or Compose Multiplatform screens and interactions. | “Polish this file list. Check large text and make sure refresh preserves scroll position.” |
+| [upstream-sync](skills/upstream-sync/SKILL.md) | Sync the intended branch of a Git repository or fork with upstream. | “Sync the fork’s default branch with upstream. Keep my feature work where it is.” |
+
+## Install one skill
+
+Clone the repository, then copy the whole skill folder so its references and scripts stay with it. For example:
+
+```sh
+git clone https://github.com/shiaho777/my-skill.git
+cd my-skill
+my_skill_target="$HOME/.agents/skills/repo-maintenance"
+if [ -e "$my_skill_target" ] || [ -L "$my_skill_target" ]; then
+  printf 'Skill already exists at %s\n' "$my_skill_target"
+else
+  mkdir -p "$HOME/.agents/skills" && cp -R skills/repo-maintenance "$my_skill_target"
+fi
+```
+
+Replace `repo-maintenance` in both places to install a different skill. If your agent uses a different user skills directory, change the destination. The published Compose skill uses the hyphenated name `ui-ux-engineering`. If you already have `ui_ux_engineering`, pick one copy. [Agent Skills format](https://agentskills.io/specification)
+
+## Maintenance
+
+Each skill lives in its own folder under [`skills/`](skills/). Keep any linked references or helper scripts alongside `SKILL.md`. To update an installed copy, review the changes in the repository first, especially if you have local edits.
+
+If an instruction is unclear or a step no longer works, open an issue with the skill name, the task you tried, and what happened.
