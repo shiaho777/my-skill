@@ -10,7 +10,6 @@ A collection of the personal agent skills I keep in `~/.agents/skills`. Read the
 | [md-docs-beautify](skills/md-docs-beautify/SKILL.md) | Improve Markdown docs and draw diagrams grounded in the repository. | “Add an architecture diagram after Quick Start. Update the Chinese README too.” |
 | [open-source-product-playbook](skills/open-source-product-playbook/SKILL.md) | Research an open-source product idea, choose a stack and design direction, and prepare it for release. | “Help me evaluate this open-source app idea and figure out what the first release needs.” |
 | [repo-maintenance](skills/repo-maintenance/SKILL.md) | Find work worth contributing, check PR readiness, or handle review and CI. | “Check whether my PR is ready to send and tell me what still blocks it.” |
-| [ui-ux-engineering](skills/ui-ux-engineering/SKILL.md) | Improve actual Jetpack Compose or Compose Multiplatform screens and interactions. | “Polish this file list. Check large text and make sure refresh preserves scroll position.” |
 | [upstream-sync](skills/upstream-sync/SKILL.md) | Sync the intended branch of a Git repository or fork with upstream. | “Sync the fork’s default branch with upstream. Keep my feature work where it is.” |
 
 ## Install one skill
@@ -28,7 +27,7 @@ else
 fi
 ```
 
-Replace `repo-maintenance` in both places to install a different skill. If your agent uses a different user skills directory, change the destination. The published Compose skill uses the hyphenated name `ui-ux-engineering`. If you already have `ui_ux_engineering`, pick one copy. [Agent Skills format](https://agentskills.io/specification)
+Replace `repo-maintenance` in both places to install a different skill. If your agent uses a different user skills directory, change the destination. [Agent Skills format](https://agentskills.io/specification)
 
 ## Maintenance
 

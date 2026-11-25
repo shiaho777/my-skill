@@ -10,7 +10,6 @@
 | [md-docs-beautify](skills/md-docs-beautify/SKILL.md) | 改善 Markdown 文档，用仓库里的实际信息配图。 | 「快速开始下面加一张架构图，也同步到中文版 README。」 |
 | [open-source-product-playbook](skills/open-source-product-playbook/SKILL.md) | 验证开源产品选题，选择技术栈和界面方向，准备首次发布。 | 「帮我判断这个开源应用想法值不值得做，首版需要做到什么程度？」 |
 | [repo-maintenance](skills/repo-maintenance/SKILL.md) | 找值得做的开源贡献、检查 PR、处理评审和 CI。 | 「帮我检查这个 PR 能不能发，列出还有哪些地方卡着。」 |
-| [ui-ux-engineering](skills/ui-ux-engineering/SKILL.md) | 优化 Jetpack Compose 或 Compose Multiplatform 的界面和交互。 | 「打磨这个文件列表，试一下大字体，让刷新后保留滚动位置。」 |
 | [upstream-sync](skills/upstream-sync/SKILL.md) | 把 Git 仓库或 fork 的指定分支和上游对齐。 | 「把 fork 的默认分支同步到上游，保留我现在的功能分支。」 |
 
 ## 安装单个 Skill
@@ -28,7 +27,7 @@ else
 fi
 ```
 
-安装其他 Skill 时，把命令里两处 `repo-maintenance` 都换成对应名称。如果你的工具用别的用户 Skill 目录，改一下目标路径即可。Compose Skill 的公开版本使用连字符名称 `ui-ux-engineering`。本机已有 `ui_ux_engineering` 时，选用其中一个即可。[Agent Skills 格式](https://agentskills.io/specification)
+安装其他 Skill 时，把命令里两处 `repo-maintenance` 都换成对应名称。如果你的工具用别的用户 Skill 目录，改一下目标路径即可。[Agent Skills 格式](https://agentskills.io/specification)
 
 ## 维护
 
